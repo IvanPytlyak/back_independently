@@ -5,5 +5,5 @@ $c =$a -$b;
     echo $c . PHP_EOL;
 $d = 7;
 $result = (int) $c + $d;
-    echo $result;
+    echo $result; 
 ?>
