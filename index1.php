@@ -188,20 +188,20 @@
 
 
 // Совмещение
-$arr_one =[1, 0, 2, 24, 2, 6, 12, 2, 5, 21];
-$arr_two =[2, 1, 5, 99, 7];
-if (count($arr_one) < count($arr_two)){
-    for ($i = 0; $i < count($arr_one); $i++){
-        array_push($arr_one, $arr_two[$i]); 
-    }
-}
-else {
-    for ($i = 0; $i < count($arr_two); $i++){
-        array_push($arr_one, $arr_two[$i]); 
-    }
-}
-arsort($arr_one);
-var_dump(($arr_one)); 
+// $arr_one =[1, 0, 2, 24, 2, 6, 12, 2, 5, 21];
+// $arr_two =[2, 1, 5, 99, 7];
+// if (count($arr_one) < count($arr_two)){
+//     for ($i = 0; $i < count($arr_one); $i++){
+//         array_push($arr_one, $arr_two[$i]); 
+//     }
+// }
+// else {
+//     for ($i = 0; $i < count($arr_two); $i++){
+//         array_push($arr_one, $arr_two[$i]); 
+//     }
+// }
+// arsort($arr_one);
+// var_dump(($arr_one)); 
 
 
 
@@ -229,3 +229,49 @@ var_dump(($arr_one));
 // }
 
 // var_dump ($newArr);
+
+
+
+// Разработайте функцию для вычисления суммы двух заданных чисел
+// Разработайте функцию, которая позволит вычислить произведение двух заданных чисел. Вычислите с ее помощью: (a+b) * c.
+
+
+// function summ ($a, $b, $c = 0){
+//     echo ($a+$b)*$c;
+// }
+// summ(2,10,3);
+
+
+// function summ1 ($a, $b, $c = 0){
+//     return ($a+$b)*$c;
+// }
+
+// // summ(2,10,3);
+// echo summ1(2,10)*$c . PHP_EOL;
+
+// function summ3 ($a, $b){
+//     return ($a+$b);
+// }
+
+// function summ4 ($a, $b){
+//     return ($a*$b);
+// }
+
+// echo summ4(summ3(2,3),3) . PHP_EOL;
+
+
+
+// Разработайте функцию, которая в качестве параметра принимает номер дня недели, а как результат выполнения выводит название дня недели.
+
+
+// $day = (int) readline('Enter day: ');
+   
+// function myFn ($day){
+//     $arr= ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
+//     if ($day > 0 && $day < count($arr)+1){
+//         echo  $arr[$day-1] . PHP_EOL;
+//         return;
+//     }
+//     echo 'Error' . PHP_EOL;
+// }
+// myFn($day);
