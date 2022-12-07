@@ -275,3 +275,85 @@
 //     echo 'Error' . PHP_EOL;
 // }
 // myFn($day);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Дан массив A. Изменить значение массива А с помощью функции, передав его в качестве параметра. Например: добавить новые элементы.
+
+
+
+
+// $arr =[];
+// function myFn (&$arr){
+//     for ($i = 1; $i < 10; $i++){
+//     array_push($arr, $i);
+//     }
+//     return $arr;
+// }
+// var_dump (myFn ($arr));
+
+
+
+
+// $str = (string) readline ('Enter string: ');
+// $console = function () use ($str){
+//     echo $str . 'NEW' . PHP_EOL;
+// };
+// $console();
+
+
+
+// $str ='dewddwdwfw';
+// function now (&$str){
+//     $str .= ' asaa saaca a';
+//     echo $str;
+// };
+
+// now($str);
+
+
+
+// $k=0;
+// function now (&$k){
+//         $k++;
+//         echo $k;
+//     };
+// now($k);
+// now($k);
+// now($k);
+
+
+
+
+$a = '123';
+$b = 4;
+$test = 1.5;
+$anotherVariable = 'Hello World';
+
+$arr=[];
+
+array_push($arr, $$a, $$b, $$test, $$anotherVariable);
+
+var_dump ($arr);
