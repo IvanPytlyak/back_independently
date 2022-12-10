@@ -347,13 +347,58 @@
 
 
 
-$a = '123';
-$b = 4;
-$test = 1.5;
-$anotherVariable = 'Hello World';
+// $a = '123';
+// $b = 4;
+// $test = 1.5;
+// $anotherVariable = 'Hello World';
 
-$arr=[];
+// $arr=[];
 
-array_push($arr, $$a, $$b, $$test, $$anotherVariable);
+// array_push($arr, $$a, $$b, $$test, $$anotherVariable);
 
-var_dump ($arr);
+// var_dump ($arr);
+
+
+
+
+
+
+
+
+
+// $str = 'wefdwedebercerberfe e berfw b';
+// $pattern ='/(?<=b).{3}/';
+// if (preg_match($pattern, $str, $arr)){
+
+// }
+
+// $str = '.exe fvdfvd .pngergrer.png sdfsdf.xls preg_replace(';
+// $pattern = '/(?<=\.)(exe|data|doc|docx|xls)/';
+
+
+// if (preg_match($pattern, $str, $arr)){
+//     echo 'good';
+// }
+// else {
+//     echo 'MNOO';
+// }
+
+// $pattern = '/(ivan|pavel)/';
+
+
+// echo ($_SERVER['REQUEST_URI']) . '<br/>';
+
+
+
+	// $str = '12 34 56 78';
+    // $res =preg_replace('#(\d+)#', '$1', $str);
+    // echo $res;
+
+
+    // $pattern ='/(\d{2})\.(\d{2})\.(\d{4})/';
+	// $str = '31.12.2025';
+    // $res =preg_replace($pattern, '$3.$2.$1', $str);
+    // echo $res;
+
+
+   
