@@ -4,16 +4,22 @@
     background: url(./public/background6.png);
 }
 table {
-    margin-top: 50px;
+    /* margin-top: 10px; */
     background-color: aqua;
+    width: 300px;
+    
 }
+
 
 h1{
     text-align: center;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 tr {
     font-size: 16px;
     /* font-weight: bold; */
+    /* width: 300px; */
 }
+
+
