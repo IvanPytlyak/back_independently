@@ -400,5 +400,3 @@
     // $res =preg_replace($pattern, '$3.$2.$1', $str);
     // echo $res;
 
-
-   
