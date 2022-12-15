@@ -1,5 +1,5 @@
 <?php
 
 function hello (string $name): string {
-    return 'Hello, ' . $name;
+    return 'Hello, ' . $name . 'weferferegjer';
 }
