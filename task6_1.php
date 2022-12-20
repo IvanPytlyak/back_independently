@@ -17,7 +17,7 @@ $users = [
         'dateOfBirth' => '01.09.1991',
         'dateOfRegistration' => '01.01.2018',
         'dateOfLastAccountLogin' => '06.12.2022',
-        'fileNameOfAvatar' => 'public/first.jpg',
+        'fileNameOfAvatar' => '../public/first.jpg',
     ],
     [
         'id' => 2,
@@ -28,7 +28,7 @@ $users = [
         'dateOfBirth' => '01.10.1992',
         'dateOfRegistration' => '01.02.2019',
         'dateOfLastAccountLogin' => '07.12.2022',
-        'fileNameOfAvatar' => 'public/second.jpg',
+        'fileNameOfAvatar' => '../public/second.jpg',
     ],
     [
         'id' => 3,
@@ -39,7 +39,7 @@ $users = [
         'dateOfBirth' => '01.11.1993',
         'dateOfRegistration' => '01.03.2020',
         'dateOfLastAccountLogin' => '05.12.2022',
-        'fileNameOfAvatar' => 'public/third.jpg',
+        'fileNameOfAvatar' => '../public/third.jpg',
     ],
     [
         'id' => 4,
@@ -50,7 +50,7 @@ $users = [
         'dateOfBirth' => '01.12.1994',
         'dateOfRegistration' => '01.04.2021',
         'dateOfLastAccountLogin' => '08.12.2022',
-        'fileNameOfAvatar' => 'public/fourth.jpg',
+        'fileNameOfAvatar' => '../public/fourth.jpg',
     ],
 ];
 
@@ -89,11 +89,10 @@ if (isset ($requestPatch1[2])){
     
     
     echo '<tr>' ;  
-            foreach ($users as $user){
-                foreach ($user as $key => $elem){
-                        echo '<th>' . $key . '</th>';   
-                }
-            }
+        foreach ($users[0] as $key => $elem){
+                echo '<th>' . $key . '</th>';   
+        }
+            
     echo '</tr>';      
 
 
