@@ -36,16 +36,15 @@ $arr = [
 
 // if (!isset($_POST)){
 
-    $fileOpen =fopen('send.csv', 'a'); // открывает все в строчку а не по столбцам
+    $fileOpen =fopen('send.csv', 'a'); // создает файл при обновлении страницы, а не по нажатию на кнопку
     foreach ($arr as $user){
         fputcsv($fileOpen, $user, ',');
     }
     fclose($fileOpen);
 
 
-    $result = $_SERVER['REQUEST_URI'];
-    $requestPatch = explode('/', $result);
-    $requestPatch[3]= 'task6_1.php';
+    
+
     echo '<br><br><a href="task6_1.php"> На страницу с персональными данными </a></br>';
 
     include('task6_1.php');
@@ -67,18 +66,3 @@ $arr = [
 
 
 
-// foreach($arr as $user){
-//         $user['name'] = $_POST['name'];
-//         $user['surname'] = $_POST['surname'];
-//         $user['age'] = $_POST['age'];
-//         $user['addres'] = $_POST['addres'];
-// }
-
-// for ($i=0; $i<count($arr);$i++){
-//     $arr[$i]['name'] = $_POST['name'];
-//     $arr[$i]['surname'] = $_POST['surname'];
-//     $arr[$i]['age'] = $_POST['age'];
-//     $arr[$i]['addres'] = $_POST['addres'];
-// }
-// print_r ($arr);
-// будет ли вышеуказанное условие пополнять массив? как этого достичь?

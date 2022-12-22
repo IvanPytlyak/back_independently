@@ -1,7 +1,12 @@
 
 <?php
-echo '<a href="task6.php"> На главнуюстраницу </a></br></br></br>';
+echo '<a href="task6.php"> На главную страницу </a></br></br></br>';
 
+$result = $_SERVER['REQUEST_URI'];
+$requestPatch = explode('/', $result);
+// print_r ($requestPatch);
+
+if ( $requestPatch[2]==='task6_1.php') {// как это написать более корректно?
 
 $row = 1;
 if ($fileOpen = fopen('send.csv', 'r')){
@@ -16,17 +21,4 @@ if ($fileOpen = fopen('send.csv', 'r')){
 }
 fclose($fileOpen);
 
-
-
-
-
-// $row = 1;
-// if ($fileOpen = fopen('send.csv', 'r')){
-//     while (($data = fgetcsv($fileOpen, 1000, ','))){
-//     $row++;
-//     } 
-//     for ($i=0; $i<strlen($data);$i++){
-//     echo $data[$i] . '<br>';
-//     }
-// }
-// fclose($fileOpen);
+}
