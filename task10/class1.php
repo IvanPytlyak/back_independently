@@ -102,11 +102,13 @@ class Rectangle {    // задача 12
 
     public function getSquare(){ 
           $this->square =$this->width*$this->heigth ;
-        return $this;
+        // return $this;
+        return $this->width*$this->heigth;
     }
     public function getPerimeter(){ 
         $this->square =$this->width*2 + $this->heigth*2 ;
-      return $this;
+    //   return $this;
+    return $this->width*2 + $this->heigth*2;
   }
 
    

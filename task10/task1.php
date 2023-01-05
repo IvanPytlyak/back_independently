@@ -27,9 +27,10 @@ echo '</br></br>Задача 11, двойная зарплата user_1 = ' . $u
 
 $first = new Rectangle;
 $first->setHeigth(5)->setWidth(10);
-print_r($first->getSquare()); 
+echo 'Площадь = ' . $first->getSquare();
+// print_r($first->getSquare()); 
 echo '</br></br>';
-print_r($first->getPerimeter());
-
+// print_r($first->getPerimeter());
+echo 'Периметр = ' . $first->getPerimeter();
 
 // '</br></br>Задача 13, площадь прямоугольника first = ' .    . '</br></br>'
