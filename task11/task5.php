@@ -8,10 +8,21 @@ class User
 
     public function __call($name, $arguments){
         if ($name === 'setName' || $name === 'setAge'){
-            $this->$name = $arguments[0];
+            if ($name === 'setName'){
+                return $this-> name= $arguments[0] ;
+            }
+            if ($name === 'setAge'){
+                return $this->age = $arguments[0];
+            } 
         }
-        if ($name === 'getName' || $name === 'getAge'){
-            print_r ($arguments);
+        
+        elseif ($name === 'getName' || $name === 'getAge'){
+            if ($name === 'getName'){
+                return $this->name;
+            }
+            if ($name === 'getAge'){
+                return $this->age;
+            } 
         }
         else {
             echo 'невозможно получить/установить значение';
