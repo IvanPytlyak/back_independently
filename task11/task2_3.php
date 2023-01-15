@@ -14,23 +14,30 @@ class Date
         $this->$property =$value;
     }
 
-    public function __get($property){
-        return date("w", strtotime($this->year . '-' . $this->month . '-' . $this->day)); 
-        // return $this->year . '-' . $this->month . '-' . $this->day; 
-    }
+    // public function __get($property){
+    //     return date("w", strtotime($this->year . '-' . $this->month . '-' . $this->day)); 
+    //     // return $this->year . '-' . $this->month . '-' . $this->day; 
+    // }
 
 
 
     public function weekDay($year,$month, $day){
         $days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда','Четверг', 'Пятница', 'Суббота'];
-        $myDate = date("w", strtotime($this->year . '-' . $this->month . '-' . $this->day)); // 'w' -выводит номер дня недели
-        for ($i=0; $i<count($days);$i++){
-            if ($i=== (int) $myDate){ 
-                echo $days[$i];
-            }
+        $myDate = date("w", strtotime($year . '-' . $month . '-' . $day)); // 'w' -выводит номер дня недели
+        echo $days[(int)$myDate];
+        // for ($i=0; $i<count($days);$i++){
+            // if ($i=== (int) $myDate ){ 
+            //     echo $days[$i];
+            //     // echo $myDate;
+            // }
+
+            // $var = substr((string) $myDate, 0, 1);
+            // echo ($myDate);
+            // substr((string) $myDate, 0, 1)
+              
     }
 }
-}
+// }
 
 
 
@@ -39,7 +46,14 @@ $test = new Date;
 // $test->month = 05;
 // $test->day =4;
 
-$test->weekDay(2023,01,05);
+$test->weekDay(2023,1,8);
+
+
+
+
+
+
+
 
 // $days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда','Четверг', 'Пятница', 'Суббота'];
 
@@ -51,6 +65,10 @@ $test->weekDay(2023,01,05);
 //     //     echo 'Ошибка';
 //     // }
 // }   
+
+
+
+
 
 // echo $test->year; // выводят одно и то же
 // echo '</br></br>'; 
